@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 3px violet solid;
+        border-collapse: collapse;
+        padding: 20px;
+        font-size: 22px;
+      }
+      table {
+        margin: 150px auto;
+      }
+      caption {
+        margin-bottom: 10px;
+        color: brown;
+        font-size: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        ReactJS tasks
+      </caption>
+      <tr>
+        <th>ReactJS Tasks</th>
+        <th>Repository links</th>
+        <th>Deployment links</th>
+      </tr>
+      <tr>
+        <td>ReactJS Task1</td>
+        <td>
+          <a href="https://github.com/jahnavi9704/ReactJSTask1">Repository1</a>
+        </td>
+        <td>
+          <a href="https://reactjstask1-virid.vercel.app/">Deployment1</a>
+        </td>
+      </tr>
+      <tr>
+        <td>ReactJS Task2</td>
+        <td>
+          <a href="https://github.com/jahnavi9704/ReactJSTask2">Repository2</a>
+        </td>
+        <td>
+          <a href="https://reactjstask2-steel.vercel.app/">Deployment2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>ReactJS Task3</td>
+        <td>
+          <a href="https://github.com/jahnavi9704/ReactJSTask3">Repository3</a>
+        </td>
+        <td>
+          <a href="https://reactjstask3-tawny.vercel.app/">Deployment3</a>
+        </td>
+      </tr>
+      <tr>
+        <td>ReactJS Task4</td>
+        <td>
+          <a href="https://github.com/jahnavi9704/ReactJSTask4">Repository4</a>
+        </td>
+        <td>
+          <a href="https://react-js-task4-ashy.vercel.app/">Deployment4</a>
+        </td>
+      </tr>
+      <tr>
+        <td>ReactJS Task5</td>
+        <td>
+          <a href="https://github.com/jahnavi9704/ReactJSTask5">Repository5</a>
+        </td>
+        <td><a href="https://reactjstask5-silk.vercel.app/">Deployment5</a></td>
+      </tr>
+      <tr>
+        <td>ReactJS Task6</td>
+        <td>
+          <a href="https://github.com/jahnavi9704/ReactJSTask6">Repository6</a>
+        </td>
+        <td><a href="https://reactjstask6-tau.vercel.app/">Deployment6</a></td>
+      </tr>
+    </table>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
